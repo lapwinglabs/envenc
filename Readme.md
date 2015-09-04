@@ -16,7 +16,7 @@ npm install envenc
 1. Install: `npm install envenc`
 2. Create: `.env` file and add your keys. Add this file to your `.gitignore`
 3. Add: `export SOME_SECRET=...` to your `~./bash_profile`. Share this key with other developers.
-4. Encrypt: `.env` file with `envenc`: `./node_modules/.bin/envenc $SOME_SECRET`
+4. Encrypt: `.env` file with envenc: `./node_modules/.bin/envenc $SOME_SECRET`
 5. Commit: `.env.enc` to source control
 6. Include: `require('envenc')(process.env.SOME_SECRET)` at the top of your application
 
@@ -43,7 +43,7 @@ require('envenc')(process.env.SOME_SECRET)
 ./node_modules/.bin/envenc $SOME_SECRET
 ```
 
-You should do this using a `pre-commit` hook. Use [husky](github.com/typicode/husky).
+You should do this using a `pre-commit` hook. Use [husky](https://github.com/typicode/husky).
 
 ## License
 
