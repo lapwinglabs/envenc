@@ -35,10 +35,12 @@ exports = module.exports = encenv
  */
 
 function encenv (pwd) {
-  if (!pwd) throw new Error('encenv requires a password')
+  if (!production) {
+    if (!pwd) throw new Error('encenv requires a password')
+    exports.decrypt(pwd)
+    localenv.inject_env(decrypted_file)
+  }
 
-  exports.decrypt(pwd)
-  !production && localenv.inject_env(decrypted_file)
   localenv.inject_env(local_decrypted_file)
 }
 
