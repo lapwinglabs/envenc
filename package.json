@@ -1,6 +1,6 @@
 {
   "name": "envenc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Seamlessly encrypt and decrypt your .env file",
   "keywords": ["encrypt", "decrypt", "1password", "environment", "env", "keys", "secrets"],
   "author": "Matthew Mueller <matt@lapwinglabs.com>",
